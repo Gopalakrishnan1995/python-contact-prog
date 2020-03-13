@@ -24,7 +24,7 @@ class mailclass():
       data=cur.execute("SELECT Email from ContactDetails")
       s = smtplib.SMTP('smtp.gmail.com', 587)
       s.starttls()
-      s.login("krishnagopalan95@gmail.com", "Krishna!@#$1234")     
+      s.login("krishnagopalan95@gmail.com", "password")     
       for row in data:
          receivers.append(row[0])
       for i in receivers:
